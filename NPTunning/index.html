@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NP Tunning</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+<link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="scripts/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/pop-ups.js"></script>
+<script type="text/javascript" src="scripts/nav.js"></script>
+</head>
+<body>
+<hgroup>
+  <h1>NP-TUNING</h1>
+  <h4>Тюнинг Ателье в Нур-Султан</h4>
+</hgroup>
+<nav>
+  <ul id="menu" class="menu">
+    <li> <a href="#" id="about"> <img src="images/1_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">О нас</span> <span class="descr">Узнай больше</span> </span> </a> </li>
+    <li> <a href="#" id="projects"> <img src="images/2_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Проекты</span> <span class="descr">Наши работы</span> </span> </a> </li>
+    <li> <a href="#" id="contact"> <img src="images/3_menu.jpg" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Контакты</span> <span class="descr">Наши телефоны и адресса</span> </span> </a> </li>
+  </ul>
+</nav>
+<section id="bg">
+  <section id="overlay"></section>
+  <a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img src="images/gallery/1.jpg" alt="Title of this pic" title="Nissan 350Z" id="bgimg" /></section>
+<div id="preloader"><img src="images/ajax-loader_dark.gif" width="32" height="32" alt="" /></div>
+<div id="img_title"></div>
+<div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="images/toolbar_fs_icon.png" width="50" height="50" alt="" /></a></div>
+<div id="thumbnails_wrapper">
+  <div id="outer_container">
+    <div class="thumbScroller">
+      <div class="container">
+        <div class="content">
+          <div><a href="images/gallery/1.jpg"><img src="images/gallery/1_thumb.jpg" title="Nissan 350Z" alt="Nissan 350Z" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/2.jpg"><img src="images/gallery/2_thumb.jpg" title="Mercedes S63 AMG" alt="Mercedes S63 AMG" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/3.jpg"><img src="images/gallery/3_thumb.jpg" title="Mitsubishi EVO 9" alt="Mitsubishi EVO 9" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/4.jpg"><img src="images/gallery/4_thumb.jpg" title="Mercedes-AMG C63 S (W205)" alt="Mercedes-AMG C63 S (W205)" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/5.jpg"><img src="images/gallery/5_thumb.jpg" title="Nissan GTR" alt="Nissan GTR" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/6.jpg"><img src="images/gallery/6_thumb.jpg" title="Subaru WRX STI" alt="Subaru WRX STI" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/1.jpg"><img src="images/gallery/1_thumb.jpg" title="Nissan 350Z" alt="Nissan 350Z" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/2.jpg"><img src="images/gallery/2_thumb.jpg" title="Mercedes S63 AMG" alt="Mercedes S63 AMG" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/3.jpg"><img src="images/gallery/3_thumb.jpg" title="Mitsubishi EVO 9" alt="Mitsubishi EVO 9" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/4.jpg"><img src="images/gallery/4_thumb.jpg" title="Mercedes-AMG C63 S (W205)" alt="Mercedes-AMG C63 S (W205)" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/5.jpg"><img src="images/gallery/5_thumb.jpg" title="Nissan GTR" alt="Nissan GTR" class="thumb" /></a></div>
+        </div>
+        <div class="content">
+          <div><a href="images/gallery/6.jpg"><img src="images/gallery/6_thumb.jpg" title="Subaru WRX STI" alt="Subaru WRX STI" class="thumb" /></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<article id="popupAbout" class="popupAbout">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupAboutClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>О нас:</h1>
+        <p><img src="images/connoisseur.png" alt="" class="image"/> Мы работаем в Нур-Султане уже более 10 лет.
+Наш опыт, фантазия, профессиональное отношение к делу, доступ к качественным материалам, желание работать с клиентом до полного его удовлетворения позволяют занимать достойное место среди конкурентов, а в чем-то быть и вне конкуренции.
+В работе применяем только высококачественные материалы, как то:
+3М, NOVOL, ASHLAND, DuPont, PPG, Mobihel, Standax, Roberlo, RM, Spies Hecken (Шпис Хекер) и посему за качество работы НЕСЕМ ОТВЕТСТВЕННОСТЬ не на словах, а на деле.
+Немного «правды жизни»: признаем свои недоработки, которые случаются нечасто, и доводим до работу до совершенства.
+У нас Вы никогда не услышите отговорок типа: «А это не я делал, а тот, кто делал, уже уволился»!
+Легко найдем общий язык и понимание с любым клиентом!
+Девиз компании, наверное, звучит слишком пафосно, скорее ПРИНЦИП РАБОТЫ NP студии тюнинга – КЛИЕНТ ДОЛЖЕН ОСТАТЬСЯ ДОВОЛЬНЫМ!</p>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupProjects" class="popupProjects">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupProjectsClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>Наши Проекты:</h1>
+        <h2>Mitsubishi lancer EVO 9</h2>
+        <p class="nomargin"><img src="images/elegant-press.png" alt="" class="image"/>Предпоследнее полноприводное чудо Mitsubishi с турбомотором обладает необъяснимой способностью полностью завладевать вашим воображением и пробуждать в нем фантазии о том, как славно было бы оказаться за рулем именно этого автомобиля. Даже в полностью стоковом виде эта модель остается одной из самых доступных и при этом способной притягивать взгляды и заставлять прохожих оборачиваться ей вслед. Обернулся и Стив Баэз, хотя до этого момента он предпочитал европеек, таких как VW GTI, Scirocco, BMW 325i и M3. У него в гараже до сих пор стоит Range Rover Sport (модель с суперчарджером). Но Evolution, в данном случае 9-ая модель 2006 года выпуска (куплена абсолютно новой в 2005 году), зацепил его, как и многих других до него. И, конечно же, не избежал он традиционной напасти Evo-водов — погони за большей мощностью и динамикой. <br>
+        </p>
+        <div class="border"></div>
+        <h2>SUBARU WRX STI: 600 Л.С.</h2>
+        <p class="nomargin"><img src="images/wrx.png" alt="" class="image"/>Двигатель: блок EJ25, поршни Manley, новый коленвал STI, распредвалы Crower, впуск Cosworth, турбина Garrett GT3582R, подача топлива Deatschwerks, фронтальный интеркуллер, прямоточная выхлопная система.
+
+Кузов: аэродинамический обвес Voltex, антикрыло GT wing, коричневый цвет.
+
+Ходоваячасть: пневмоподвеска AirLift Performance + управление Autopilot V2, колесные диски 18×10.5” CCW D240, шины Nankang.<br />
+        </p>
+        <div class="border"></div>
+        <h2>Toyota Supra</h2>
+        <p><img src="images/supra.png" alt="" class="image"/>Двигатель2JZ-GTE. Рядный, 6-цилиндровый. Распредвалы HKS 264. Усиленные клапаны, пружины и тарелки Manley. Впускная система холодного воздуха E-Shift. Впускной коллектор SP. Турбина Turbonetics Т66. Внешний вестгейт GReddy. Интеркулер HKS. Пайпинг от E-Shift. Охладитель масла GReddy. Выпускная система HKS ТТ Hiper. Выпускной коллектор E-Shift. Бензонасосы Walbro. Форсунки GReddy 720 куб. см. Регулятор топлива SX. Топливная рейка и магистрали Sard. Сцепление ATS карбон. Тормоза: Спереди: 6-поршневые суппорты  Rotora, перфорированные тормозные диски с насечками. Сзади: 4-поршневые суппорты Rotora, перфорированные тормозные диски с насечками. Армированные тормозные шланги Rotora.
+Подвеска
+Винтовые стойки Tein Flex. Стабилизаторы поперечной устойчивости увеличенного диаметра Titan Motorsports. Передняя и задняя растяжки.
+Колеса
+Кованые диски Forgeline диаметром 18 дюймов и шириной 9 и 11 дюймов — спереди и сзади соответственно. Шины Toyo RA-1 с размерностью 275/35 R18 —спереди и 305/30 R18 —сзади.
+Снаружи
+Карбоновая юбка Paisley.  Диффузор Top Secret. Антикрыло Millen.
+Окраска кузова цветом BMW Sterling Gray Metallic.
+Внутри
+Выброшены задние панели и сиденья.
+Спереди установлены спортивные сиденья Recaro. Ремни безопасности Schroth. Дополнительные приборы Defi.<br />
+        </p>
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupContact" class="popupContact">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupContactClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>Contact: Lorem Ipsum</h1>
+        <p></p>
+        <form method="post">
+          <label for="name">Имя:</label>
+          <input type="text" name="name" id="name" required placeholder="Имя" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required placeholder="email@example.com" />
+          <label for="message">Сообщение:</label>
+          <textarea name="message" id="message" required></textarea>
+          <input type="submit" value="Отправить" />
+        </form>
+        <br />
+        
+        <iframe width="425" height="300" class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d1251.205830827739!2d71.4319921811892!3d51.15619964292158!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d51.1568793!2d71.4322121!5e0!3m2!1sru!2skz!4v1605078303561!5m2!1sru!2skz;output=embed"></iframe>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<article id="popupBlog" class="popupBlog">
+  <div class="customScrollBox">
+    <div class="container">
+      <div class="content"> <a id="popupBlogClose"><img src="images/cross.png" width="20" alt="" /></a>
+        <h1>Blog</h1>
+        <h2>Lorem ipsum</h2>
+        <div class="date"><span class="day">24</span> <span class="month">May</span> <span class="year">2011</span> </div>
+        <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+        <div class="border"></div>
+        <h2>Dolor sit amet</h2>
+        <div class="date"><span class="day">22</span> <span class="month">May</span> <span class="year">2011</span> </div>
+        <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+        <div class="border"></div>
+      </div>
+    </div>
+    <div class="dragger_container">
+      <div class="dragger"></div>
+    </div>
+    <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
+</article>
+<script type="text/javascript" src="scripts/gallery.js"></script> 
+<script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
+</body>
+</html>
